@@ -1,0 +1,95 @@
+On effectuera ici des tests avec 500 terrains 11x9 et avec une limite de 440 pas:
+
+Pour infini1.prg: {1 M {G 1 M {D D 1 M{D A} {A G}?}{A D}?} {A}?C!}C!:
+    à une densité de 0.1:
+
+    Nombre de terrains où le robot est bloqué: 1 et pourcentage: 0.20
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:499 et pourcentage: 99.80
+    Nombre moyen de pas effectué pour les sorties:63.16
+
+    à une densité de 0.2:
+
+    Nombre de terrains où le robot est bloqué: 26 et pourcentage: 5.20
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:474 et pourcentage: 94.80
+    Nombre moyen de pas effectué pour les sorties:71.93
+
+    à une densité de 0.4:
+
+    Nombre de terrains où le robot est bloqué: 199 et pourcentage: 39.80
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:301 et pourcentage: 60.20
+    Nombre moyen de pas effectué pour les sorties:60.10
+
+    à une densité de 0.5:
+
+    Nombre de terrains où le robot est bloqué: 286 et pourcentage: 57.20
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:214 et pourcentage: 42.80
+    Nombre moyen de pas effectué pour les sorties:43.99
+
+    à une densité de 0.7:
+
+    Nombre de terrains où le robot est bloqué: 320 et pourcentage: 64.00
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:180 et pourcentage: 36.00
+    Nombre moyen de pas effectué pour les sorties:33.52
+
+    à une densité de 0.8:
+
+    Nombre de terrains où le robot est bloqué: 251 et pourcentage: 50.20
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:249 et pourcentage: 49.80
+    Nombre moyen de pas effectué pour les sorties:43.69
+
+
+Pour infini.prg:{1 M {D 1 M{D 1 M{D A}{A}?}{A}?}{A}?C!}C!:
+    à une densité de 0.1:
+
+    Nombre de terrains où le robot est bloqué: 1 et pourcentage: 0.20
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:499 et pourcentage: 99.80
+    Nombre moyen de pas effectué pour les sorties:67.62
+
+    à une densité de 0.2:
+
+    Nombre de terrains où le robot est bloqué: 34 et pourcentage: 6.80
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:466 et pourcentage: 93.20
+    Nombre moyen de pas effectué pour les sorties:77.68
+
+    à une densité de 0.4:
+
+    Nombre de terrains où le robot est bloqué: 252 et pourcentage: 50.40
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:248 et pourcentage: 49.60
+    Nombre moyen de pas effectué pour les sorties:49.54
+
+    à une densité de 0.5:
+
+    Nombre de terrains où le robot est bloqué: 340 et pourcentage: 68.00
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:160 et pourcentage: 32.00
+    Nombre moyen de pas effectué pour les sorties:31.55
+
+    à une densité de 0.7:
+
+    Nombre de terrains où le robot est bloqué: 370 et pourcentage: 74.00
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:130 et pourcentage: 26.00
+    Nombre moyen de pas effectué pour les sorties:21.76
+
+    à une densité de 0.8:
+
+    Nombre de terrains où le robot est bloqué: 322 et pourcentage: 64.40
+    Nombre de terrains où le robot a rencontré un obstacle: 0 et pourcentage: 0.00
+    Nombre de terrains où le robot est sorti:178 et pourcentage: 35.60
+    Nombre moyen de pas effectué pour les sorties:23.78
+
+
+On remarque que infini1.prg a systématiquement un plus grand pourcentage de sorties que infini.prg. En effet, il est plus complexe. En revanche, on remarque aussi que dans les cas
+où le robot sort et que la densité est de 0.1 et 0.2, le nombre de pas effectués est quasiment le même entre les deux programmes, bien que infini1.prg en effectue légèrement moins.
+Hors, dans tous les cas où la densité est plus grande, le robot effectue toujours moins de pas pour sortir avec infini.prg qu'avec infini1.prg. De plus, dans les deux programmes, 
+peu importe la densité, le robot ne rencontre jamais aucun obstacle, il est seulement bloqué. Une autre chose curieuse est que pour les deux programmes, quand la densité est à 
+0.8, donc la densité la plus élevée de celles testées, le pourcentage de sorties est toujours plus élevé que quand la densité est à 0.7.
